@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevin Keohane — Brand, GTM & Growth Strategist</title>
+<meta name="description" content="Senior brand, GTM and growth strategist. 20+ years. EY, Deloitte, Coca-Cola. AI-native. Fractional CMO. Co-founder, Go-to-Market Maven.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-name" href="index.html">Kevin Keohane</a>
+  <div class="nav-links">
+    <a href="about.html">About</a>
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html" class="nav-cta">Book a Call</a>
+  </div>
+</nav>
+
+<!-- STATIC HERO -->
+<div class="static-hero">
+  <div class="static-hero-content">
+    <div class="video-eyebrow">Brand · GTM · Growth · AI-Native</div>
+    <h1>
+      I find the true story<br>
+      inside complexity<br>
+      <em>and build the infrastructure<br>that makes it scale.</em>
+    </h1>
+    <p>
+      <strong>Kevin Keohane.</strong> 20+ years. EY, Deloitte, Coca-Cola, GlaxoSmithKline, Royal Bank of Scotland. Fourteen years based in London at WPP and Publicis. Now AI-native and building the systems that make brand strategy run 160× faster.
+    </p>
+    <div class="hero-cta-group">
+      <a href="contact.html" class="btn-primary">Book a Conversation</a>
+      <a href="assets/Kevin_Keohane_Marketing_Portfolio.pdf" class="btn-ghost" download>Download Portfolio</a>
+    </div>
+    <p class="hero-sub">Spokane, WA · Remote · US &amp; EU · Senior advisory · Fractional CMO · Board roles</p>
+  </div>
+  <!-- Video panel: play button only, video opens in lightbox outside layout -->
+  <div class="static-hero-video">
+    <button class="play-btn" onclick="openVideoLightbox()" aria-label="Watch the short version">
+      <div class="play-icon">&#9654;</div>
+      <span>The short version</span>
+    </button>
+  </div>
+</div>
+
+<!-- VIDEO LIGHTBOX: completely outside layout, no interaction with hero -->
+<div id="video-lightbox" role="dialog" aria-modal="true" aria-label="Kevin Keohane reel" onclick="closeVideoLightbox(event)">
+  <button id="video-close" onclick="closeVideoLightbox()" aria-label="Close video">&times;</button>
+  <video id="lightbox-video" controls playsinline preload="none">
+    <source src="assets/kevin-keohane-reel-wide.mp4" type="video/mp4">
+  </video>
+</div>
+
+<script>
+var lbVideo = document.getElementById('lightbox-video');
+var lbBox   = document.getElementById('video-lightbox');
+
+function openVideoLightbox() {
+  lbBox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  lbVideo.play();
+}
+
+function closeVideoLightbox(e) {
+  // Close on backdrop click or close button; ignore clicks on the video itself
+  if (e && e.target === lbVideo) return;
+  lbBox.classList.remove('open');
+  document.body.style.overflow = '';
+  lbVideo.pause();
+  lbVideo.currentTime = 0;
+}
+
+// Keyboard close
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeVideoLightbox();
+});
+</script>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <div class="ticker-item"><span>◆</span>EY</div>
+    <div class="ticker-item"><span>◆</span>Deloitte</div>
+    <div class="ticker-item"><span>◆</span>Coca-Cola</div>
+    <div class="ticker-item"><span>◆</span>GlaxoSmithKline</div>
+    <div class="ticker-item"><span>◆</span>AstraZeneca</div>
+    <div class="ticker-item"><span>◆</span>Royal Bank of Scotland</div>
+    <div class="ticker-item"><span>◆</span>BP</div>
+    <div class="ticker-item"><span>◆</span>BT Openreach</div>
+    <div class="ticker-item"><span>◆</span>Workday</div>
+    <div class="ticker-item"><span>◆</span>Commvault</div>
+    <div class="ticker-item"><span>◆</span>KPMG</div>
+    <div class="ticker-item"><span>◆</span>Vodafone</div>
+    <div class="ticker-item"><span>◆</span>Shell</div>
+    <div class="ticker-item"><span>◆</span>Syngenta</div>
+    <div class="ticker-item"><span>◆</span>Simon Med</div>
+    <div class="ticker-item"><span>◆</span>Securian Canada</div>
+    <div class="ticker-item"><span>◆</span>Linedata</div>
+    <div class="ticker-item"><span>◆</span>IEEE</div>
+    <div class="ticker-item"><span>◆</span>EY</div>
+    <div class="ticker-item"><span>◆</span>Deloitte</div>
+    <div class="ticker-item"><span>◆</span>Coca-Cola</div>
+    <div class="ticker-item"><span>◆</span>GlaxoSmithKline</div>
+    <div class="ticker-item"><span>◆</span>AstraZeneca</div>
+    <div class="ticker-item"><span>◆</span>Royal Bank of Scotland</div>
+    <div class="ticker-item"><span>◆</span>BP</div>
+    <div class="ticker-item"><span>◆</span>BT Openreach</div>
+    <div class="ticker-item"><span>◆</span>Workday</div>
+    <div class="ticker-item"><span>◆</span>Commvault</div>
+    <div class="ticker-item"><span>◆</span>KPMG</div>
+    <div class="ticker-item"><span>◆</span>Vodafone</div>
+    <div class="ticker-item"><span>◆</span>Shell</div>
+    <div class="ticker-item"><span>◆</span>Syngenta</div>
+    <div class="ticker-item"><span>◆</span>Simon Med</div>
+    <div class="ticker-item"><span>◆</span>Securian Canada</div>
+    <div class="ticker-item"><span>◆</span>Linedata</div>
+    <div class="ticker-item"><span>◆</span>IEEE</div>
+  </div>
+</div>
+
+<!-- PROOF -->
+<section class="proof">
+  <div class="section-label">The Work</div>
+  <h2 class="section-title">A career measured in<br>commercial outcomes</h2>
+  <div class="divider"></div>
+  <div class="proof-grid">
+    <div class="proof-card">
+      <div class="proof-number">$30<sup>B</sup></div>
+      <div class="proof-label">Global Rebrand Led</div>
+      <div class="proof-desc">EY's "Building a Better Working World" — 150 countries, 300,000 people. A cold introduction became a $30M+ relationship sustained over 15 years.</div>
+    </div>
+    <div class="proof-card">
+      <div class="proof-number">40</div>
+      <div class="proof-label">Deloitte GTM Campaigns</div>
+      <div class="proof-desc">In 8 years. AI/data ops, cloud alliances, government cyber, Workday ERP, Deloitte Operate. Revenue targets from $10M to $10B+. Agency named to the Deloitte roster on arrival.</div>
+    </div>
+    <div class="proof-card">
+      <div class="proof-number">160<sup>×</sup></div>
+      <div class="proof-label">GTM Cycle Acceleration</div>
+      <div class="proof-desc">Co-founded Go-to-Market Maven — an agentic AI GTM platform compressing full strategy cycles from weeks to one day. Revenue-generating. Adopted by InnovateINW's portfolio.</div>
+    </div>
+    <div class="proof-card">
+      <div class="proof-number">20<sup>+</sup></div>
+      <div class="proof-label">Years · 5 Continents</div>
+      <div class="proof-desc">Fourteen years based in London at WPP, Publicis, and a top-ranked UK management consultancy — then a decade building one of the US's most decorated independent GTM practices.</div>
+    </div>
+    <div class="proof-card">
+      <div class="proof-number">$1.3<sup>M</sup></div>
+      <div class="proof-label">Practice Built from Zero</div>
+      <div class="proof-desc">Built the GTM practice at PartnersCreative from $0 to $1.3M — no inherited accounts. Every engagement won through competitive pursuit. Agency named to Deloitte roster on arrival.</div>
+    </div>
+    <div class="proof-card">
+      <div class="proof-number">2</div>
+      <div class="proof-label">Published Books</div>
+      <div class="proof-desc">The Talent Journey and Brand &amp; Talent — on connecting brand and talent strategy to drive sustainable commercial performance. MBA professor since 2016.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO DOWNLOAD -->
+<section style="background:var(--navy);padding:48px;">
+  <div class="portfolio-banner">
+    <div class="portfolio-banner-text">
+      <strong>Marketing &amp; Brand Strategy Portfolio</strong>
+      <span>20+ years of named engagements, client testimonials, and proof points — in one document</span>
+    </div>
+    <a href="assets/Kevin_Keohane_Marketing_Portfolio.pdf" class="btn-download" download>
+      ↓ Download Portfolio PDF
+    </a>
+  </div>
+</section>
+
+<!-- FEATURED TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-label">Selected Voices</div>
+  <h2 class="section-title light">What clients say</h2>
+  <div class="divider"></div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-quote">Kevin is a master in the art of joining things together. Not only does he know how to connect brand with business strategy and express it externally — he also knows how to align and transform an organisation internally to deliver those goals, while keeping things refreshingly simple.</div>
+      <div class="testimonial-author">Claire Ward</div>
+      <div class="testimonial-role">HR Communications Manager · Penguin Random House · Client</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">Kevin has been a valuable advisor and partner on a wide range of strategic issues — from core strategy development to brand differentiation to developing talent and culture. He listens carefully. He researches carefully. And he responds with creative, winning ideas and counsel.</div>
+      <div class="testimonial-author">Jack Lawson</div>
+      <div class="testimonial-role">President &amp; CEO · Clearwater Credit Union · Client</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">Keohanes don't come along every day. A great mix of creativity, rigour and insight makes him one of the best professionals I have ever interacted with.</div>
+      <div class="testimonial-author">Peter Bell</div>
+      <div class="testimonial-role">Managing Partner · Bell Brand Engagement · Manager</div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:40px;">
+    <a href="testimonials.html" style="font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.3);padding-bottom:3px;">View all testimonials →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-name">Kevin Keohane</div>
+  <div class="footer-links">
+    <a href="about.html">About</a>
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Book a Call</a>
+    <a href="https://linkedin.com/in/kkeohane" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
