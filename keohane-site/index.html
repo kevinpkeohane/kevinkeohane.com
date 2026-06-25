@@ -22,13 +22,9 @@
   </div>
 </nav>
 
-<!-- VIDEO HERO -->
-<div class="video-hero">
-  <video autoplay muted loop playsinline preload="auto">
-    <source src="assets/kevin-keohane-reel.mp4" type="video/mp4">
-  </video>
-  <div class="video-overlay"></div>
-  <div class="video-content">
+<!-- STATIC HERO -->
+<div class="static-hero">
+  <div class="static-hero-content">
     <div class="video-eyebrow">Brand · GTM · Growth · AI-Native</div>
     <h1>
       I find the true story<br>
@@ -42,9 +38,49 @@
       <a href="contact.html" class="btn-primary">Book a Conversation</a>
       <a href="assets/Kevin_Keohane_Marketing_Portfolio.pdf" class="btn-ghost" download>Download Portfolio</a>
     </div>
-    <p class="hero-sub">Spokane, WA · Remote · US &amp; UK · Senior advisory · Fractional CMO · Board roles</p>
+    <p class="hero-sub">Spokane, WA · Remote · US &amp; EU · Senior advisory · Fractional CMO · Board roles</p>
+  </div>
+  <!-- Video panel: play button only, video opens in lightbox outside layout -->
+  <div class="static-hero-video">
+    <button class="play-btn" onclick="openVideoLightbox()" aria-label="Watch the short version">
+      <div class="play-icon">&#9654;</div>
+      <span>The short version</span>
+    </button>
   </div>
 </div>
+
+<!-- VIDEO LIGHTBOX: completely outside layout, no interaction with hero -->
+<div id="video-lightbox" role="dialog" aria-modal="true" aria-label="Kevin Keohane reel" onclick="closeVideoLightbox(event)">
+  <button id="video-close" onclick="closeVideoLightbox()" aria-label="Close video">&times;</button>
+  <video id="lightbox-video" controls playsinline preload="none">
+    <source src="assets/kevin-keohane-reel-wide.mp4" type="video/mp4">
+  </video>
+</div>
+
+<script>
+var lbVideo = document.getElementById('lightbox-video');
+var lbBox   = document.getElementById('video-lightbox');
+
+function openVideoLightbox() {
+  lbBox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  lbVideo.play();
+}
+
+function closeVideoLightbox(e) {
+  // Close on backdrop click or close button; ignore clicks on the video itself
+  if (e && e.target === lbVideo) return;
+  lbBox.classList.remove('open');
+  document.body.style.overflow = '';
+  lbVideo.pause();
+  lbVideo.currentTime = 0;
+}
+
+// Keyboard close
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeVideoLightbox();
+});
+</script>
 
 <!-- TICKER -->
 <div class="ticker-wrap">
