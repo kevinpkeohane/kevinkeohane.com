@@ -6,453 +6,368 @@
 <title>Articles — Kevin Keohane</title>
 <meta name="description" content="Brand, GTM, and growth strategy articles by Kevin Keohane. 20+ years of thinking on positioning, go-to-market, culture, and AI-enabled delivery.">
 <link rel="canonical" href="https://kevinkeohane.com/articles">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2302254B'/><text x='3' y='23' font-family='system-ui,sans-serif' font-weight='900' font-size='15' fill='%23F22EBE'>KK</text></svg>">
-<link rel="stylesheet" href="/styles.css">
-<style>
-.articles-hero {
-  padding: clamp(3rem,7vw,5rem) 0 clamp(2rem,5vw,3.5rem);
-  border-bottom: 1px solid var(--line-soft);
-  background: radial-gradient(700px 400px at 5% 10%, rgba(255,255,255,0.04), transparent 60%);
-}
-.articles-hero .kicker {
-  font-family: var(--mono, monospace);
-  font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase;
-  color: var(--accent); margin-bottom: 0.9rem;
-}
-.articles-hero h1 {
-  font-size: clamp(2rem,5vw,3.2rem); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 1rem;
-}
-.articles-hero p { color: var(--mute); font-size: clamp(1rem,2vw,1.15rem); max-width: 52ch; }
-
-.articles-section { padding: clamp(2.5rem,6vw,4.5rem) 0; }
-
-.art-count { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mute-2); margin-bottom: 2rem; font-weight: 600; }
-
-/* Filter tabs */
-.filter-tabs { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 2.2rem; }
-.ftab {
-  padding: 0.45rem 1rem; border-radius: 999px; font-size: 0.84rem; font-weight: 600;
-  border: 1px solid var(--line); color: var(--mute); cursor: pointer; transition: 0.15s;
-  background: none;
-}
-.ftab:hover, .ftab.active { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
-
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-  gap: 1.25rem;
-}
-.blog-card { color: var(--white); }
-.blog-card a { color: inherit; display: flex; flex-direction: column; height: 100%; }
-
-/* CTA band */
-.cta-band {
-  background: linear-gradient(135deg, #02254B, #014a7a);
-  border-radius: 20px; padding: 48px 32px; text-align: center; margin-top: 3rem;
-}
-.cta-band h2 { font-size: clamp(22px,3vw,30px); letter-spacing: -0.02em; margin-bottom: 12px; }
-.cta-band p { color: rgba(255,255,255,.78); margin-bottom: 24px; max-width: 420px; margin-inline: auto; }
-.cta-band .btn-primary { background: #F22EBE; color: #0a0a0a; box-shadow: 0 6px 20px rgba(242,46,190,.3); }
-</style>
-
-<!-- Calendly -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230a0a0a'/><text x='3' y='23' font-family='system-ui,sans-serif' font-weight='900' font-size='15' fill='%23ffffff'>KK</text></svg>">
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-<script>
-function openCalendly(){if(typeof Calendly!=="undefined"){Calendly.initPopupWidget({url:"https://calendly.com/kevin-keohane/initial-chat"});}else{window.open("https://calendly.com/kevin-keohane/initial-chat","_blank");}return false;}
-</script>
+<script>function openCalendly(){if(typeof Calendly!=="undefined"){Calendly.initPopupWidget({url:"https://calendly.com/kevin-keohane/initial-chat"});}else{window.open("https://calendly.com/kevin-keohane/initial-chat","_blank");}return false;}</script>
+<style>
+:root{
+  --brand:#02254B;--pink:#F22EBE;--cyan:#00C5D8;
+  --ink:#0b1526;--ink-soft:#4a5568;--paper:#ffffff;--wash:#f4f7fb;--line:#e3e9f1;
+  --radius:14px;--maxw:1080px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+a{color:var(--brand);text-decoration:none}
+
+/* Nav */
+header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,0.9);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.1)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.nav-logo{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:16px;color:#fff;text-decoration:none}
+.nav-logo:hover{opacity:.85}
+.kk-nav-mark{width:34px;height:34px;border-radius:7px;background:#0a0a0a;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:#fff;flex-shrink:0}
+.nav-links{display:flex;align-items:center;gap:24px;list-style:none}
+.nav-links a{font-size:.9rem;color:rgba(255,255,255,.65);font-weight:500;text-decoration:none}
+.nav-links a:hover{color:#fff}
+.nav-cta{padding:.45rem 1rem;border:1px solid rgba(255,255,255,.2);border-radius:999px;color:#fff!important}
+.nav-cta:hover{border-color:var(--pink);color:var(--pink)!important}
+
+/* Hero */
+.hero{background:linear-gradient(150deg,var(--brand) 0%,#014a7a 100%);color:#fff;padding:clamp(3rem,6vw,5rem) 0 clamp(2rem,4vw,3.5rem);border-bottom:1px solid rgba(255,255,255,.1)}
+.kicker{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);font-weight:800;margin-bottom:.9rem}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;letter-spacing:-.03em;margin-bottom:1rem}
+.hero p{color:rgba(255,255,255,.75);font-size:clamp(1rem,2vw,1.15rem);max-width:52ch}
+
+/* Grid */
+.section{padding:clamp(2.5rem,5vw,4rem) 0}
+.count{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:2rem;font-weight:600}
+.art-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.25rem}
+.art-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.15s;text-decoration:none;color:var(--ink)}
+.art-card:hover{box-shadow:0 8px 30px rgba(15,23,32,.1);transform:translateY(-2px)}
+.art-card img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--wash)}
+.art-body{padding:1.3rem;display:flex;flex-direction:column;gap:.45rem;flex:1}
+.art-date{font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--pink)}
+.art-body h3{font-size:1.02rem;font-weight:700;color:var(--ink);line-height:1.35}
+.art-body p{font-size:.88rem;color:var(--ink-soft);flex:1;line-height:1.6}
+.art-more{font-size:.82rem;font-weight:700;color:var(--pink);margin-top:.3rem}
+
+/* CTA */
+.cta-band{background:linear-gradient(135deg,var(--brand),#014a7a);border-radius:20px;padding:48px 32px;text-align:center;margin-top:3rem;color:#fff}
+.cta-band h2{font-size:clamp(22px,3vw,30px);letter-spacing:-.02em;margin-bottom:12px}
+.cta-band p{color:rgba(255,255,255,.78);margin-bottom:24px;max-width:420px;margin-inline:auto;font-size:16px}
+.btn{display:inline-block;background:var(--pink);color:#fff;font-weight:700;padding:12px 24px;border-radius:999px;font-size:15px;transition:.15s;box-shadow:0 6px 18px rgba(242,46,190,.28);text-decoration:none}
+.btn:hover{background:#d81ba8;text-decoration:none;transform:translateY(-1px)}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--ink-soft);font-size:.88rem}
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.foot a{color:var(--ink-soft)}
+.foot a:hover{color:var(--ink)}
+.foot-links{display:flex;gap:1.4rem}
+
+@media(max-width:640px){.nav-links{display:none}.art-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-
-<header class="site-header" role="banner">
-  <nav class="nav-inner" aria-label="Primary">
-    <a href="/" class="nav-logo">
-      <div class="kk-nav-mark">KK</div>
-      Kevin Keohane
-    </a>
-    <ul class="nav-links" role="list">
+<header>
+  <nav class="nav-inner">
+    <a href="/" class="nav-logo"><div class="kk-nav-mark">KK</div>Kevin Keohane</a>
+    <ul class="nav-links">
       <li><a href="/#problems">What I solve</a></li>
       <li><a href="/#about">About</a></li>
       <li><a href="/#testimonials">Testimonials</a></li>
-      <li><a href="/articles" style="color:var(--white)">Articles</a></li>
-      <li><a href="#" class="nav-cta" onclick="Calendly.initPopupWidget({url:'https://calendly.com/kevin-keohane/initial-chat'});return false;">Book a call</a></li>
+      <li><a href="/articles" style="color:#fff">Articles</a></li>
+      <li><a href="#" class="nav-cta" onclick="return openCalendly();">Book a call</a></li>
     </ul>
   </nav>
 </header>
 
-<main id="main-content">
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">Articles</div>
+    <h1>Thinking on brand, GTM &amp; growth</h1>
+    <p>Practical strategy from 20 years working on positioning, go-to-market, culture alignment, and AI-enabled delivery.</p>
+  </div>
+</div>
 
-  <div class="articles-hero">
-    <div class="wrap">
-      <div class="kicker">Articles</div>
-      <h1>Thinking on brand, GTM &amp; growth</h1>
-      <p>Practical strategy from 20 years working on positioning, go-to-market, culture alignment, and AI-enabled delivery.</p>
+<section class="section">
+  <div class="wrap">
+    <p class="count">28 articles</p>
+    <div class="art-grid">
+        <a class="art-card" href="/articles/agentic-ai-marketing-trends/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/efedeaee-3edc-48d9-8744-f2a6411e5663.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Sep 6, 2026</div>
+            <h3>7 Agentic AI Marketing Trends That Change GTM</h3>
+            <p>Agentic AI marketing trends are reshaping GTM. Learn where autonomous workflows create speed, where judgment remains essential, and how to govern both.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/ai-powered-market-analysis-services/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/6041cda9-4126-4a27-8cbf-274c5b0bb2e4.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 16, 2026</div>
+            <h3>AI-Powered Market Analysis Services That Drive GTM</h3>
+            <p>AI-powered market analysis services turn scattered signals into sharper positioning, faster go-to-market decisions, and better commercial focus at scale.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/align-culture-and-cx/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/da7de1a8-dfea-4a36-a81c-a08aa4c68d77.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Sep 5, 2026</div>
+            <h3>How to Align Culture and CX to Drive Growth</h3>
+            <p>Learn how to align culture and CX through shared behaviors, operating decisions, and accountability that turn employee experience into customer growth.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/b2b-buying-behavior-trends/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/588312f8-6a6b-4b0f-99c7-5e96a134fbc3.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Sep 1, 2026</div>
+            <h3>B2B Buying Behavior Trends That Change GTM</h3>
+            <p>B2B buying behavior trends now reward clarity, consensus, proof, and speed. Learn how to align brand, sales, and AI for stronger deals for enterprise.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/b2b-demand-generation-strategy-creates-revenue/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/20d12939-d5cc-4b40-9e2d-3e0323e1c3e7.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 21, 2026</div>
+            <h3>B2B Demand Generation Strategy That Creates Revenue</h3>
+            <p>A B2B demand generation strategy should align positioning, sales, content, and measurement into one operating system built to create qualified revenue.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/b2b-sales-enablement-strategy/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/af305f0f-30b8-4660-be2a-068fb5ec2ae3.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 17, 2026</div>
+            <h3>B2B Sales Enablement Strategy That Moves Revenue</h3>
+            <p>Build a B2B sales enablement strategy that connects positioning, proof, content, coaching, and systems to faster, more consistent revenue growth at scale.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/brand-narrative-for-complex-offerings/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/657269b7-2899-4bec-bdc4-6642210517e1.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 23, 2026</div>
+            <h3>Brand Narrative for Complex Offerings That Sells</h3>
+            <p>Build a brand narrative for complex offerings that gives buyers clarity, equips sales, aligns teams, and turns technical value into commercial momentum.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/brand-safe-marketing-automation-system/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/2e54ca7f-6fb7-41cf-857a-e6a55a4fc731.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 25, 2026</div>
+            <h3>How a Brand-Safe Marketing Automation System Works</h3>
+            <p>Build a brand-safe marketing automation system that protects positioning, speeds production, and gives growth teams control without creating bottlenecks.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/employee-experience-customer-experience-alignment/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/95eee902-730b-440e-83dc-79e49febe415.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 20, 2026</div>
+            <h3>Employee Experience Customer Experience Alignment</h3>
+            <p>Employee experience customer experience alignment turns internal promises into better customer outcomes, stronger retention, and more credible growth.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/employer-brand-strategy-consultant/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/c4915647-022a-4d27-bb57-d23baf14a0bf.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 18, 2026</div>
+            <h3>What an Employer Brand Strategy Consultant Does</h3>
+            <p>An employer brand strategy consultant connects employee experience, market positioning, and hiring execution to build a credible, clear growth advantage.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/employer-brand-strategy-guide/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/058f3017-ccbd-47a4-9bf5-2ebd6170c749.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Sep 3, 2026</div>
+            <h3>Employer Brand Strategy Guide for Growth Leaders</h3>
+            <p>A practical employer brand strategy guide for leaders who need a credible employee promise, aligned managers, and measurable hiring and retention results.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/future-of-brand-operations-accountable/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/5b9a1076-d988-4512-9759-011ff1f10c2c.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Sep 7, 2026</div>
+            <h3>The Future of Brand Operations Is Accountable</h3>
+            <p>The future of brand operations will connect strategy, revenue, content, culture, and AI under one accountable operating model built to move faster now.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/global-enterprise-rebrand-strategy/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/536bd5d8-9294-4a31-a34c-648ea73a8531.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 22, 2026</div>
+            <h3>Global Enterprise Rebrand Strategy That Travels</h3>
+            <p>A global enterprise rebrand strategy that aligns markets, sales, culture, and systems without forcing one message on every audience or region reliably.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/go-to-market-strategy-consultant/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/ff92bf7b-4599-4490-916f-95ba88e0638e.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 14, 2026</div>
+            <h3>What a Go-to-Market Strategy Consultant Delivers</h3>
+            <p>A go-to-market strategy consultant connects positioning, sales, delivery, and AI into an operating system built to create pipeline and accelerate revenue.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/go-to-market-strategy-guide/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/593a149f-b75c-4d23-97fd-8df240c16ab5.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Sep 2, 2026</div>
+            <h3>Go to Market Strategy Guide for Growth Leaders</h3>
+            <p>A go to market strategy guide for leaders who need sharper positioning, credible demand, sales alignment, and an operating system built to execute well.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/gtm-operating-model/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/1785f0c9-8c57-4257-a95f-5a5903b3fa1d.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 27, 2026</div>
+            <h3>How a GTM Operating Model Drives Execution</h3>
+            <p>A GTM operating model turns positioning, demand, sales, and delivery into one accountable system — so growth does not stall at the handoff under pressure.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/how-brand-strategy-agencies-create-commercial-clarity/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/ab2bbd1e-f43d-4922-9f97-5dcce2e183a4.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Sep 10, 2026</div>
+            <h3>How Brand Strategy Agencies Create Commercial Clarity</h3>
+            <p>Brand strategy agencies should connect positioning to pipeline, sales, culture, and AI delivery. Learn how to choose a partner for execution at scale.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/how-to-create-sales-playbooks-reps-will-use/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/2f0779f9-eac7-4592-922f-24d7ac94ca8c.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Sep 4, 2026</div>
+            <h3>How to Create Sales Playbooks Reps Will Use</h3>
+            <p>Learn how to create sales playbooks that turn positioning into consistent buyer conversations, faster ramp times, and measurable pipeline progress now.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/in-house-versus-agency-gtm/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/2872cd0a-1de2-454b-8a5b-36c3ba65f57b.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 28, 2026</div>
+            <h3>In-House Versus Agency GTM: Which Model Wins?</h3>
+            <p>In-house versus agency GTM is not a staffing choice. Learn how to choose the operating model that turns positioning into pipeline, faster, at real speed.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/market-differentiation-drives-revenue/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/a64dd115-1954-470d-999d-cb0d133311ee.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 31, 2026</div>
+            <h3>Market Differentiation That Drives Revenue</h3>
+            <p>Market differentiation turns a credible story into buying preference. Learn how to build a position your sales team can prove, repeat, and scale at scale.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/partner-marketing-infrastructure-strategy/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/36c6b3fe-7042-494b-a05a-614a6cbaa3b2.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 24, 2026</div>
+            <h3>Partner Marketing Infrastructure Strategy That Scales</h3>
+            <p>Build a partner marketing infrastructure strategy that gives partners clear plays, sales teams confidence, and leaders measurable pipeline without chaos.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/productized-go-to-market-strategy-that-works/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/1e149fce-587d-40eb-84ad-417a18d32195.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 15, 2026</div>
+            <h3>Productized Go-to-Market Strategy That Works</h3>
+            <p>A productized go-to-market strategy turns strategic choices into a fixed-scope, senior-led sprint for faster commercial execution across the business.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/validate-enterprise-market-positioning/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/fde0fe10-287b-48f9-95b5-fbef4a972edd.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 30, 2026</div>
+            <h3>How to Validate Enterprise Market Positioning</h3>
+            <p>Learn how to validate enterprise market positioning with buyer evidence, sales tests, and operating signals that turn brand strategy into revenue traction.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/what-a-brand-positioning-consultant-does/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/8ec6430f-e40f-4cea-b0fa-9960d024a1f7.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 26, 2026</div>
+            <h3>What a Brand Positioning Consultant Actually Does</h3>
+            <p>A brand positioning consultant turns market insight into a clear commercial story, sales tools, and a go-to-market system designed to perform at scale.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/what-is-agentic-ai-content/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/0f28a318-5d04-4707-bcb6-13316e1770e4.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Sep 8, 2026</div>
+            <h3>What Is Agentic AI Content and How It Works</h3>
+            <p>Learn what is agentic AI content, how it differs from generative AI, and how leaders build governed systems that turn strategy into scalable output, fast.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/what-is-agentic-ai-marketing/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/0fde37c0-1519-4182-b8f6-6b80c70f1dd6.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 19, 2026</div>
+            <h3>What Is Agentic AI Marketing? A Practical View</h3>
+            <p>What is agentic AI marketing? Learn how autonomous AI agents connect strategy, data, content, and action while keeping people accountable at scale for growth.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/when-go-to-market-consultants-add-value/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/a9dee2ad-8463-48cd-9497-79dd5384fc31.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Aug 29, 2026</div>
+            <h3>When Go to Market Consultants Add Value</h3>
+            <p>Go to market consultants should turn positioning into pipeline, not another slide deck. See what to expect, what to challenge, and how to choose well.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+        <a class="art-card" href="/articles/why-do-product-launches-fail/">
+          <img src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/c61ad6c8-0ede-46db-a3ec-ec0172c6ab56.webp" alt="" loading="lazy">
+          <div class="art-body">
+            <div class="art-date">Sep 9, 2026</div>
+            <h3>Why Do Product Launches Fail? The Operating Gaps</h3>
+            <p>Why do product launches fail? Identify the strategic, commercial, and operating gaps that turn strong offers into slow starts — then fix them at scale.</p>
+            <span class="art-more">Read article →</span>
+          </div>
+        </a>
+    </div>
+    <div class="cta-band">
+      <h2>Ready to fix the real problem?</h2>
+      <p>Senior advisory, fractional CMO, or board roles. 30 minutes, no obligation.</p>
+      <a href="#" onclick="return openCalendly();" class="btn">Book a call →</a>
     </div>
   </div>
+</section>
 
-  <section class="articles-section">
-    <div class="wrap">
-      <p class="art-count">28 articles</p>
-      <div class="blog-grid">
-
-        <div class="blog-card">
-          <a href="/articles/agentic-ai-marketing-trends/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/efedeaee-3edc-48d9-8744-f2a6411e5663.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Sep 6, 2026</div>
-              <div class="blog-card-title">7 Agentic AI Marketing Trends That Change GTM</div>
-              <div class="blog-card-desc">Agentic AI marketing trends are reshaping GTM. Learn where autonomous workflows create speed, where judgment remains essential, and how to govern both.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/how-brand-strategy-agencies-create-commercial-clarity/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/ab2bbd1e-f43d-4922-9f97-5dcce2e183a4.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Sep 10, 2026</div>
-              <div class="blog-card-title">How Brand Strategy Agencies Create Commercial Clarity</div>
-              <div class="blog-card-desc">Brand strategy agencies should connect positioning to pipeline, sales, culture, and AI delivery. Learn how to choose a partner for execution at scale.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/why-do-product-launches-fail/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/c61ad6c8-0ede-46db-a3ec-ec0172c6ab56.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Sep 9, 2026</div>
-              <div class="blog-card-title">Why Do Product Launches Fail? The Operating Gaps</div>
-              <div class="blog-card-desc">Identify the strategic, commercial, and operating gaps that turn strong offers into slow starts — then fix them at scale.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/what-is-agentic-ai-content/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/0f28a318-5d04-4707-bcb6-13316e1770e4.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Sep 8, 2026</div>
-              <div class="blog-card-title">What Is Agentic AI Content and How It Works</div>
-              <div class="blog-card-desc">How it differs from generative AI, and how leaders build governed systems that turn strategy into scalable output, fast.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/future-of-brand-operations-accountable/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/5b9a1076-d988-4512-9759-011ff1f10c2c.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Sep 7, 2026</div>
-              <div class="blog-card-title">The Future of Brand Operations Is Accountable</div>
-              <div class="blog-card-desc">Connecting strategy, revenue, content, culture, and AI under one accountable operating model built to move faster now.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/agentic-ai-marketing-trends/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/efedeaee-3edc-48d9-8744-f2a6411e5663.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Sep 5, 2026</div>
-              <div class="blog-card-title">How to Align Culture and CX to Drive Growth</div>
-              <div class="blog-card-desc">Align culture and CX through shared behaviours, operating decisions, and accountability that turn employee experience into customer growth.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/how-to-create-sales-playbooks-reps-will-use/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/2f0779f9-eac7-4592-922f-24d7ac94ca8c.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Sep 4, 2026</div>
-              <div class="blog-card-title">How to Create Sales Playbooks Reps Will Use</div>
-              <div class="blog-card-desc">Turn positioning into consistent buyer conversations, faster ramp times, and measurable pipeline progress.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/employer-brand-strategy-guide/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/058f3017-ccbd-47a4-9bf5-2ebd6170c749.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Sep 3, 2026</div>
-              <div class="blog-card-title">Employer Brand Strategy Guide for Growth Leaders</div>
-              <div class="blog-card-desc">A credible employee promise, aligned managers, and measurable hiring and retention results.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/go-to-market-strategy-guide/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/593a149f-b75c-4d23-97fd-8df240c16ab5.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Sep 2, 2026</div>
-              <div class="blog-card-title">Go to Market Strategy Guide for Growth Leaders</div>
-              <div class="blog-card-desc">Sharper positioning, credible demand, sales alignment, and an operating system built to execute well.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/b2b-buying-behavior-trends/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/588312f8-6a6b-4b0f-99c7-5e96a134fbc3.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Sep 1, 2026</div>
-              <div class="blog-card-title">B2B Buying Behavior Trends That Change GTM</div>
-              <div class="blog-card-desc">B2B buying now rewards clarity, consensus, proof, and speed. How to align brand, sales, and AI for stronger enterprise deals.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/market-differentiation-drives-revenue/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/a64dd115-1954-470d-999d-cb0d133311ee.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 31, 2026</div>
-              <div class="blog-card-title">Market Differentiation That Drives Revenue</div>
-              <div class="blog-card-desc">Turn a credible story into buying preference with a position your sales team can prove, repeat, and scale.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/validate-enterprise-market-positioning/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/fde0fe10-287b-48f9-95b5-fbef4a972edd.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 30, 2026</div>
-              <div class="blog-card-title">How to Validate Enterprise Market Positioning</div>
-              <div class="blog-card-desc">Buyer evidence, sales tests, and operating signals that turn brand strategy into revenue traction.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/when-go-to-market-consultants-add-value/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/a9dee2ad-8463-48cd-9497-79dd5384fc31.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 29, 2026</div>
-              <div class="blog-card-title">When Go to Market Consultants Add Value</div>
-              <div class="blog-card-desc">What to expect, what to challenge, and how to choose well — GTM consultants should turn positioning into pipeline, not slides.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/in-house-versus-agency-gtm/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/2872cd0a-1de2-454b-8a5b-36c3ba65f57b.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 28, 2026</div>
-              <div class="blog-card-title">In-House Versus Agency GTM: Which Model Wins?</div>
-              <div class="blog-card-desc">Not a staffing choice. How to choose the operating model that turns positioning into pipeline, faster.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/gtm-operating-model/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/1785f0c9-8c57-4257-a95f-5a5903b3fa1d.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 27, 2026</div>
-              <div class="blog-card-title">How a GTM Operating Model Drives Execution</div>
-              <div class="blog-card-desc">Turns positioning, demand, sales, and delivery into one accountable system — so growth doesn't stall at the handoff.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/what-a-brand-positioning-consultant-does/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/8ec6430f-e40f-4cea-b0fa-9960d024a1f7.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 26, 2026</div>
-              <div class="blog-card-title">What a Brand Positioning Consultant Actually Does</div>
-              <div class="blog-card-desc">Market insight into a clear commercial story, sales tools, and a go-to-market system designed to perform at scale.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/brand-safe-marketing-automation-system/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/2e54ca7f-6fb7-41cf-857a-e6a55a4fc731.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 25, 2026</div>
-              <div class="blog-card-title">How a Brand-Safe Marketing Automation System Works</div>
-              <div class="blog-card-desc">Protect positioning, speed production, and give growth teams control without creating bottlenecks.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/partner-marketing-infrastructure-strategy/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/36c6b3fe-7042-494b-a05a-614a6cbaa3b2.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 24, 2026</div>
-              <div class="blog-card-title">Partner Marketing Infrastructure Strategy That Scales</div>
-              <div class="blog-card-desc">Give partners clear plays, sales teams confidence, and leaders measurable pipeline without chaos.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/brand-narrative-for-complex-offerings/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/657269b7-2899-4bec-bdc4-6642210517e1.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 23, 2026</div>
-              <div class="blog-card-title">Brand Narrative for Complex Offerings That Sells</div>
-              <div class="blog-card-desc">Give buyers clarity, equip sales, align teams, and turn technical value into commercial momentum.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/global-enterprise-rebrand-strategy/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/workflows/536bd5d8-9294-4a31-a34c-648ea73a8531.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 22, 2026</div>
-              <div class="blog-card-title">Global Enterprise Rebrand Strategy That Travels</div>
-              <div class="blog-card-desc">Align markets, sales, culture, and systems without forcing one message on every audience or region.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/b2b-demand-generation-strategy-creates-revenue/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/20d12939-d5cc-4b40-9e2d-3e0323e1c3e7.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 21, 2026</div>
-              <div class="blog-card-title">B2B Demand Generation Strategy That Creates Revenue</div>
-              <div class="blog-card-desc">Align positioning, sales, content, and measurement into one operating system built to create qualified revenue.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/employee-experience-customer-experience-alignment/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/95eee902-730b-440e-83dc-79e49febe415.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 20, 2026</div>
-              <div class="blog-card-title">Employee Experience Customer Experience Alignment</div>
-              <div class="blog-card-desc">Turn internal promises into better customer outcomes, stronger retention, and more credible growth.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/what-is-agentic-ai-marketing/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/0fde37c0-1519-4182-b8f6-6b80c70f1dd6.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 19, 2026</div>
-              <div class="blog-card-title">What Is Agentic AI Marketing? A Practical View</div>
-              <div class="blog-card-desc">How autonomous AI agents connect strategy, data, content, and action while keeping people accountable at scale.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/employer-brand-strategy-consultant/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/c4915647-022a-4d27-bb57-d23baf14a0bf.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 18, 2026</div>
-              <div class="blog-card-title">What an Employer Brand Strategy Consultant Does</div>
-              <div class="blog-card-desc">Connects employee experience, market positioning, and hiring execution to build a credible, clear growth advantage.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/b2b-sales-enablement-strategy/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/af305f0f-30b8-4660-be2a-068fb5ec2ae3.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 17, 2026</div>
-              <div class="blog-card-title">B2B Sales Enablement Strategy That Moves Revenue</div>
-              <div class="blog-card-desc">Connect positioning, proof, content, coaching, and systems to faster, more consistent revenue growth.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/ai-powered-market-analysis-services/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/6041cda9-4126-4a27-8cbf-274c5b0bb2e4.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 16, 2026</div>
-              <div class="blog-card-title">AI-Powered Market Analysis Services That Drive GTM</div>
-              <div class="blog-card-desc">Turn scattered signals into sharper positioning, faster go-to-market decisions, and better commercial focus at scale.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/productized-go-to-market-strategy-that-works/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/1e149fce-587d-40eb-84ad-417a18d32195.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 15, 2026</div>
-              <div class="blog-card-title">Productized Go-to-Market Strategy That Works</div>
-              <div class="blog-card-desc">A fixed-scope, senior-led sprint for faster commercial execution across the business.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <a href="/articles/go-to-market-strategy-consultant/">
-            <img class="blog-card-img" src="https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/ee26d01d-1f80-44e7-8e39-126a27846f15/ff92bf7b-4599-4490-916f-95ba88e0638e.webp" alt="" loading="lazy">
-            <div class="blog-card-body">
-              <div class="blog-card-meta">Aug 14, 2026</div>
-              <div class="blog-card-title">What a Go-to-Market Strategy Consultant Delivers</div>
-              <div class="blog-card-desc">Connects positioning, sales, delivery, and AI into an operating system built to create pipeline and accelerate revenue.</div>
-              <div class="blog-card-more">Read article →</div>
-            </div>
-          </a>
-        </div>
-
-      </div>
-
-      <div class="cta-band">
-        <h2>Ready to fix the real problem?</h2>
-        <p>Senior advisory, fractional CMO, or board roles. 30 minutes, no obligation.</p>
-        <a href="https://calendly.com/kevin-keohane/initial-chat" onclick="return openCalendly();" class="btn btn-primary">Book a call →</a>
-      </div>
-
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="yr"></span> Kevin Keohane</span>
+    <div class="foot-links">
+      <a href="mailto:kevin.keohane@brandandtalent.com">Email</a>
+      <a href="https://www.linkedin.com/in/kkeohane/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://brandandtalent.com" target="_blank" rel="noopener">Brand &amp; Talent</a>
+      <a href="https://gotomarketmaven.com" target="_blank" rel="noopener">GTM Maven</a>
     </div>
-  </section>
-</main>
-
-<footer class="site-footer" role="contentinfo">
-  <div class="footer-inner">
-    <span class="footer-copy">© <span id="yr"></span> Kevin Keohane · <a href="mailto:kevin.keohane@brandandtalent.com">kevin.keohane@brandandtalent.com</a></span>
-    <nav class="footer-links" aria-label="Footer">
-      <a href="https://www.linkedin.com/in/kkeohane/" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a href="https://brandandtalent.com/" target="_blank" rel="noopener">Brand &amp; Talent ↗</a>
-      <a href="https://gotomarketmaven.com/" target="_blank" rel="noopener">GTM Maven ↗</a>
-    </nav>
   </div>
 </footer>
-<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
