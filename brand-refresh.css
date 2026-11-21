@@ -17,7 +17,9 @@ header{background:rgba(9,8,9,.96)}
 :focus-visible{outline:2px solid #ffadd2;outline-offset:4px}
 @media(max-width:900px){.nav-links{gap:12px}}
 @media(max-width:560px){.book-inner{grid-template-columns:1fr}.book-inner img{max-width:118px}.cta-row{flex-wrap:wrap}.nav>.btn{padding-inline:12px}.logo{font-size:15px}}
-.prob-q{background:#211820}
+.prob-head{background:#251822}
+.prob-q{background:#171117}
+.prob-foot{background:#120f12}
 .hero-meta{color:#c5bfc3}
 .eyebrow,.art-tag,.art-more,.art-date{color:#ff85b9}
 .cta-band{background:#211820}

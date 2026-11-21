@@ -88,18 +88,30 @@ section{padding:72px 0}
 .eyebrow{color:var(--pink);font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
 
 /* ── Problems ── */
-.problems{display:flex;flex-direction:column;gap:16px}
-.problem{display:grid;grid-template-columns:1fr 1.15fr;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.15s}
-.problem:hover{box-shadow:0 8px 30px rgba(15,23,32,.08);transform:translateY(-1px)}
-.prob-q,.prob-body{padding:36px}
-.prob-stage{font-size:clamp(21px,3vw,29px);line-height:1.2;letter-spacing:-.025em;margin-bottom:16px}
-.prob-num{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:6px}
-.prob-symptom,.prob-cause{font-size:clamp(16px,2.2vw,21px);font-weight:700;line-height:1.4;letter-spacing:-.015em}
+.problems{display:flex;flex-direction:column;gap:24px}
+.problem{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--paper);transition:.15s}
+.problem:hover{box-shadow:0 8px 30px rgba(15,23,32,.12);transform:translateY(-1px)}
+.prob-head{background:#211820;border-bottom:1px solid var(--line);padding:24px 32px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.prob-step{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:4px}
+.prob-stage{font-size:clamp(21px,2.8vw,27px);line-height:1.2;letter-spacing:-.025em;color:#fff}
+.prob-summary{color:var(--ink-soft);font-size:15px;max-width:44ch;margin:0}
+.prob-pair{display:grid;grid-template-columns:1fr 1.3fr;border-bottom:1px solid var(--line)}
+.prob-q,.prob-body{padding:26px 32px}
+.prob-q{background:#181218;border-right:1px solid var(--line)}
 .prob-body{background:var(--paper)}
+.prob-num{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:8px}
+.prob-symptom{font-size:clamp(16px,2vw,19px);font-weight:700;line-height:1.4;letter-spacing:-.015em;color:#fff}
+.prob-cause{font-size:clamp(16px,1.9vw,18px);font-weight:700;line-height:1.4;letter-spacing:-.01em;color:var(--ink)}
+.prob-detail{margin-top:8px;color:var(--ink-soft);font-size:15px;line-height:1.6}
+.prob-foot{background:#120f12;padding:22px 32px}
 .prob-work,.prob-proof,.problem-note{color:var(--ink-soft)}
-.prob-work{margin-top:10px;line-height:1.65}
-.prob-proof{margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:13px}
+.prob-work{font-size:15px;line-height:1.65}
+.prob-proof{margin-top:12px;padding-top:12px;border-top:1px solid var(--line);font-size:13px}
 .prob-work strong,.prob-proof strong{color:var(--ink)}
+.stage-jump{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:-20px auto 32px}
+.stage-jump a{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font-size:14px;font-weight:700;transition:.15s}
+.stage-jump a span{color:var(--cyan);font-size:12px}
+.stage-jump a:hover{border-color:var(--cyan);text-decoration:none;transform:translateY(-1px)}
 .problem-note{max-width:68ch;margin:28px auto 0;text-align:center}
 .hero p.lead{margin-bottom:16px}
 .hero-method{margin-bottom:24px;font-weight:800}
@@ -152,15 +164,18 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--ink-soft);fon
   .hero-inner{grid-template-columns:1fr}
   .hero-photo{display:none}
 }
+@media(max-width:740px){
+  .prob-pair{grid-template-columns:1fr}
+  .prob-q{border-right:0;border-bottom:1px solid var(--line)}
+  .prob-head,.prob-q,.prob-body,.prob-foot{padding:20px 22px}
+}
 @media(max-width:640px){
-  .problem{grid-template-columns:1fr}
   .quotes{grid-template-columns:1fr}
   .art-grid{grid-template-columns:1fr}
   .cred-grid{grid-template-columns:1fr 1fr}
   .nav-links{display:none}
   section{padding:52px 0}
   .hero{padding:56px 0 48px}
-  .prob-q,.prob-body{padding:24px}
 }
 </style>
 <link rel="stylesheet" href="/brand-refresh.css">
@@ -191,7 +206,7 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--ink-soft);fon
       <div>
         <span class="pill">Founder, Brand &amp; Talent · B2B growth consultancy</span>
         <h1>Fix what’s actually <em>holding back growth.</em></h1>
-        <p class="lead">You might come to me for a rebrand, more leads, or a strategy that hasn’t stuck. I help B2B leaders find what’s behind the brief and fix it, whether the work sits in brand, sales, culture or operations.</p>
+        <p class="lead">You might come to me for a rebrand, a stalled pipeline, a strategy that hasn’t stuck, or a business trying to break into new markets. I help B2B leaders diagnose what’s behind the brief and fix it across brand, sales, culture and operations.</p>
         <p class="hero-method"><a href="#problems">Choose. Build. Align. Scale.</a></p>
         <div class="cta-row">
           <a href="#book" class="btn">Get the free book ↓</a>
@@ -220,63 +235,170 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--ink-soft);fon
     <div class="section-head" id="services">
       <p class="eyebrow">What I solve</p>
       <h2 id="problems-title">Choose. Build. Align. Scale.</h2>
-      <p>Four ways to find what’s holding back growth. Start with the problem you recognise. The fix might sit somewhere else.</p>
+      <p>Growth problems rarely arrive wearing the right label. Start with what you’re hearing inside the business — and see what’s usually underneath it.</p>
     </div>
+    <nav class="stage-jump" aria-label="Jump to growth stage">
+      <a href="#choose"><span>01</span> Choose</a>
+      <a href="#build"><span>02</span> Build</a>
+      <a href="#align"><span>03</span> Align</a>
+      <a href="#scale"><span>04</span> Scale</a>
+    </nav>
     <div class="problems">
+
       <article class="problem" id="choose" aria-labelledby="choose-title">
-        <div class="prob-q">
-          <h3 class="prob-stage" id="choose-title">Choose</h3>
-          <p class="prob-num">What I hear</p>
-          <p class="prob-symptom">“We need a rebrand. Buyers can’t tell us apart.”</p>
+        <div class="prob-head">
+          <div>
+            <p class="prob-step">01 · Choose</p>
+            <h3 class="prob-stage" id="choose-title">Positioning &amp; strategic focus</h3>
+          </div>
+          <p class="prob-summary">Decide who you’re built to win and why they should choose you over the default option.</p>
         </div>
-        <div class="prob-body">
-          <p class="prob-num">What’s underneath</p>
-          <p class="prob-cause">You’re competing on terms that make everyone look the same.</p>
-          <p class="prob-work"><strong>How I help:</strong> I work with leadership to decide which buyers to win, what they should choose you for, and what proof will hold up when procurement puts you side by side with the competition.</p>
-          <p class="prob-proof"><strong>In practice:</strong> EarthScope: $400M+ contract won and defended</p>
+        <div class="prob-pairs">
+          <div class="prob-pair">
+            <div class="prob-q">
+              <p class="prob-num">What’s presented</p>
+              <p class="prob-symptom">“We need a rebrand. Buyers keep comparing us on price.”</p>
+            </div>
+            <div class="prob-body">
+              <p class="prob-num">What’s actually happening</p>
+              <p class="prob-cause">You’re competing on the category’s default checklist, where everyone sounds the same.</p>
+              <p class="prob-detail">A fresh look won’t fix an unsettled position. You win by changing what buyers think matters before procurement puts you side by side with the competition.</p>
+            </div>
+          </div>
+          <div class="prob-pair">
+            <div class="prob-q">
+              <p class="prob-num">What’s presented</p>
+              <p class="prob-symptom">“We serve lots of industries — we need messaging that keeps all our options open.”</p>
+            </div>
+            <div class="prob-body">
+              <p class="prob-num">What’s actually happening</p>
+              <p class="prob-cause">Trying to speak to everyone dilutes the story until no one feels spoken to.</p>
+              <p class="prob-detail">Growth stalls when leadership avoids trade-offs. Clear positioning names who you’re best for, what you stand for, and what you’re willing to leave behind.</p>
+            </div>
+          </div>
+        </div>
+        <div class="prob-foot">
+          <p class="prob-work"><strong>How I help:</strong> I work with leadership to lock down the target buyer, define a space you can credibly own, and back it with proof that holds up in a real buying conversation.</p>
+          <p class="prob-proof"><strong>In practice:</strong> EarthScope ($400M+ contract won and defended) · LECG (Red Dot Award brand refresh &amp; values)</p>
         </div>
       </article>
+
       <article class="problem" id="build" aria-labelledby="build-title">
-        <div class="prob-q">
-          <h3 class="prob-stage" id="build-title">Build</h3>
-          <p class="prob-num">What I hear</p>
-          <p class="prob-symptom">“Marketing’s busy. Why isn’t pipeline moving?”</p>
+        <div class="prob-head">
+          <div>
+            <p class="prob-step">02 · Build</p>
+            <h3 class="prob-stage" id="build-title">Narrative, GTM &amp; commercial engine</h3>
+          </div>
+          <p class="prob-summary">Turn your position into one story, proof and GTM system that moves deals forward.</p>
         </div>
-        <div class="prob-body">
-          <p class="prob-num">What’s underneath</p>
-          <p class="prob-cause">More activity won’t help if marketing and sales are telling different stories.</p>
-          <p class="prob-work"><strong>How I help:</strong> I turn the position into an offer, proof and sales tools that hold up in a buyer conversation. Then we connect campaigns, partners and sales around the same buyers and measure what moves deals forward.</p>
-          <p class="prob-proof"><strong>In practice:</strong> Deloitte: 40+ go-to-market playbooks</p>
+        <div class="prob-pairs">
+          <div class="prob-pair">
+            <div class="prob-q">
+              <p class="prob-num">What’s presented</p>
+              <p class="prob-symptom">“We spend on marketing, stay busy, and still can’t see pipeline move.”</p>
+            </div>
+            <div class="prob-body">
+              <p class="prob-num">What’s actually happening</p>
+              <p class="prob-cause">Marketing and sales are telling different stories — or optimising hard against a message that never settled.</p>
+              <p class="prob-detail">The real cost isn’t wasted ad spend. It’s eighteen months spent executing the wrong story competently while sales improvises in every room.</p>
+            </div>
+          </div>
+          <div class="prob-pair">
+            <div class="prob-q">
+              <p class="prob-num">What’s presented</p>
+              <p class="prob-symptom">“We’ve grown on referrals and relationships, but outbound and campaigns aren’t landing.”</p>
+            </div>
+            <div class="prob-body">
+              <p class="prob-num">What’s actually happening</p>
+              <p class="prob-cause">The story still lives in the founder’s head.</p>
+              <p class="prob-detail">What closes in a warm introduction rarely translates to cold buyers until your point of view is turned into an offer, proof and sales tools anyone on the team can carry.</p>
+            </div>
+          </div>
+        </div>
+        <div class="prob-foot">
+          <p class="prob-work"><strong>How I help:</strong> I translate the position into one usable narrative, offer proof and a go-to-market operating system connecting campaigns, partners and sales around the same buyers.</p>
+          <p class="prob-proof"><strong>In practice:</strong> Deloitte (40+ go-to-market &amp; sales-enablement playbooks, $10M–$10B+ targets) · Go-to-Market Maven™</p>
         </div>
       </article>
+
       <article class="problem" id="align" aria-labelledby="align-title">
-        <div class="prob-q">
-          <h3 class="prob-stage" id="align-title">Align</h3>
-          <p class="prob-num">What I hear</p>
-          <p class="prob-symptom">“We agreed the strategy. Nothing changed.”</p>
+        <div class="prob-head">
+          <div>
+            <p class="prob-step">03 · Align</p>
+            <h3 class="prob-stage" id="align-title">Culture, employee experience &amp; delivery</h3>
+          </div>
+          <p class="prob-summary">Make sure the business can actually deliver what the brand promises.</p>
         </div>
-        <div class="prob-body">
-          <p class="prob-num">What’s underneath</p>
-          <p class="prob-cause">The people expected to deliver the promise haven’t been set up to keep it.</p>
-          <p class="prob-work"><strong>How I help:</strong> I trace where employee friction shows up for customers, then work with leaders and frontline teams to change the routines, tools or incentives getting in the way. That’s where employee experience becomes a growth issue.</p>
-          <p class="prob-proof"><strong>In practice:</strong> EY: one story across 150 countries and 300,000 people</p>
+        <div class="prob-pairs">
+          <div class="prob-pair">
+            <div class="prob-q">
+              <p class="prob-num">What’s presented</p>
+              <p class="prob-symptom">“We agreed the strategy in the room. Six months later, nothing changed.”</p>
+            </div>
+            <div class="prob-body">
+              <p class="prob-num">What’s actually happening</p>
+              <p class="prob-cause">Adoption is the deliverable, not the deck.</p>
+              <p class="prob-detail">A strategy written centrally without the people expected to carry it gets nodded through in leadership meetings and quietly ignored in day-to-day work.</p>
+            </div>
+          </div>
+          <div class="prob-pair">
+            <div class="prob-q">
+              <p class="prob-num">What’s presented</p>
+              <p class="prob-symptom">“Turnover is up, customer scores are slipping, and good people are harder to hire.”</p>
+            </div>
+            <div class="prob-body">
+              <p class="prob-num">What’s actually happening</p>
+              <p class="prob-cause">Your external promise has outrun operational reality — and employees are absorbing the gap.</p>
+              <p class="prob-detail">That isn’t an HR problem; it’s a commercial leak you pay for twice, in attrition and in churn.</p>
+            </div>
+          </div>
+        </div>
+        <div class="prob-foot">
+          <p class="prob-work"><strong>How I help:</strong> Using EX2CX, I trace where employee-experience friction breaks the customer promise, then align leadership priorities, behaviors, employer brand and frontline routines so delivery matches the story.</p>
+          <p class="prob-proof"><strong>In practice:</strong> EY (one story &amp; global EVP across 150 countries, 300,000 people) · Securian Canada · BT Openreach (“Right First Time”)</p>
         </div>
       </article>
+
       <article class="problem" id="scale" aria-labelledby="scale-title">
-        <div class="prob-q">
-          <h3 class="prob-stage" id="scale-title">Scale</h3>
-          <p class="prob-num">What I hear</p>
-          <p class="prob-symptom">“We’ve grown into several companies sharing a logo.”</p>
+        <div class="prob-head">
+          <div>
+            <p class="prob-step">04 · Scale</p>
+            <h3 class="prob-stage" id="scale-title">New markets, architecture &amp; repeatable systems</h3>
+          </div>
+          <p class="prob-summary">Make what works travel — into new markets, across offerings, and through repeatable workflows.</p>
         </div>
-        <div class="prob-body">
-          <p class="prob-num">What’s underneath</p>
-          <p class="prob-cause">Growth exposed decisions no one owns: what stays consistent, what can flex and who decides.</p>
-          <p class="prob-work"><strong>How I help:</strong> I define what the businesses share and where teams have room to adapt. Then we build the standards and workflows that let the work travel without a fresh meeting every time. If AI helps, we use it once the work is worth repeating.</p>
-          <p class="prob-proof"><strong>In practice:</strong> LTIMindtree: five AI offerings, one idea</p>
+        <div class="prob-pairs">
+          <div class="prob-pair">
+            <div class="prob-q">
+              <p class="prob-num">What’s presented</p>
+              <p class="prob-symptom">“We’re a smaller business that’s saturated our own region and can’t seem to break into new markets.”</p>
+            </div>
+            <div class="prob-body">
+              <p class="prob-num">What’s actually happening</p>
+              <p class="prob-cause">Local reputation doesn’t cross borders on its own.</p>
+              <p class="prob-detail">What won you work where people already know you hasn’t been packaged into a clear proposition, proof and repeatable go-to-market playbook for buyers who’ve never heard your name.</p>
+            </div>
+          </div>
+          <div class="prob-pair">
+            <div class="prob-q">
+              <p class="prob-num">What’s presented</p>
+              <p class="prob-symptom">“We’ve grown into several companies sharing a logo.”</p>
+            </div>
+            <div class="prob-body">
+              <p class="prob-num">What’s actually happening</p>
+              <p class="prob-cause">Growth or acquisitions exposed decisions no one owns — what stays consistent at the top, what flexes underneath, and who decides.</p>
+              <p class="prob-detail">Layering on more campaigns or AI before settling that architecture only multiplies the noise instead of scaling what works.</p>
+            </div>
+          </div>
+        </div>
+        <div class="prob-foot">
+          <p class="prob-work"><strong>How I help:</strong> Whether you’re taking a proven regional business into new markets or bringing coherence across products, locations or acquisitions, I build the brand architecture, repeatable GTM workflows and AI-enabled standards that let good work travel without reinventing it every time.</p>
+          <p class="prob-proof"><strong>In practice:</strong> SimonMed (brand transformation &amp; architecture across 150+ US locations) · LTIMindtree (five AI offerings, one idea) · Dormakaba</p>
         </div>
       </article>
+
     </div>
-    <p class="problem-note">These aren’t four separate projects. If buyers can’t tell you apart, a better campaign won’t fix it. And a sharper story won’t help if your people can’t deliver it. I start where growth is stuck and follow the problem across teams.</p>
+    <p class="problem-note">These aren’t four separate projects. A regional business breaking into new markets often discovers a Choose or Build constraint first — and a sharper story won’t hold if your people can’t deliver it. I start where growth is stuck and follow the problem across teams.</p>
   </div>
 </section>
 
