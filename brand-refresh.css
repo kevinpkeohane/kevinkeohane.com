@@ -1,0 +1,29 @@
+:root{--brand:#f7f7f5;--brand-dark:#232023;--pink:#ff1e83;--pink-soft:#301521;--cyan:#ff85b9;--cyan-soft:#301521;--ink:#f7f7f5;--ink-soft:#c5bfc3;--paper:#090809;--wash:#161316;--line:#413740}
+header{background:rgba(9,8,9,.96)}
+.kk-mark{color:#ff85b9;border:1px solid #513040}
+.hero{background:linear-gradient(90deg,#090809 28%,rgba(9,8,9,.76) 100%),url('/assets/pink-poppy.jpg') right center/cover no-repeat}
+.hero h1 em,.hero .pill{color:#ff85b9}
+.btn,.btn.outline:hover{color:#090809;background:#ff70ae;box-shadow:none}
+.btn:hover{background:#ffadd2;color:#090809}
+.btn.navy,.btn.navy:hover,.btn.ghost-light,.btn.ghost-light:hover{color:#fff;background:#262225;box-shadow:none;border:1px solid #63545d}
+.btn.outline{color:#ff85b9;background:transparent}
+.band{background:#191519;color:var(--ink)}
+.book-feature{border-block:1px solid #663449;background:#171216;scroll-margin-top:90px}
+.book-inner{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:clamp(20px,5vw,56px);align-items:center}
+.book-inner img{display:block;width:100%;height:auto;border:1px solid #453740;border-radius:4px}
+.book-inner h2{font-size:clamp(2rem,5vw,3.3rem);line-height:1.13;letter-spacing:-.04em}
+.book-inner h2 sup,.book-inner .eyebrow{color:#ff85b9}
+.book-inner p:not(.eyebrow){color:var(--ink-soft);margin:.7rem 0;max-width:62ch}
+:focus-visible{outline:2px solid #ffadd2;outline-offset:4px}
+@media(max-width:900px){.nav-links{gap:12px}}
+@media(max-width:560px){.book-inner{grid-template-columns:1fr}.book-inner img{max-width:118px}.cta-row{flex-wrap:wrap}.nav>.btn{padding-inline:12px}.logo{font-size:15px}}
+.prob-q{background:#211820}
+.hero-meta{color:#c5bfc3}
+.eyebrow,.art-tag,.art-more,.art-date{color:#ff85b9}
+.cta-band{background:#211820}
+.kicker{color:#ff85b9}
+.nav-cta:focus-visible{outline:2px solid #ffadd2}
+section[id]{scroll-margin-top:85px}
+.hero[aria-labelledby="articles-title"]{padding:clamp(3rem,6vw,5rem) 0}
+.article-book-link{display:inline-block;margin-top:1.25rem;font-weight:700;color:#ff85b9;text-decoration:underline;text-underline-offset:.2em}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
