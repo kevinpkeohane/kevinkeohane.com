@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kevin Keohane — Founder, Brand &amp; Talent | B2B Growth</title>
-<meta name="description" content="Kevin Keohane leads Brand &amp; Talent, a B2B growth consultancy connecting positioning, go-to-market and employee experience. Download the free Brand &amp; Talent² field guide.">
+<meta name="description" content="Kevin Keohane helps B2B leaders diagnose what’s holding back growth and fix it across positioning, go-to-market, employee experience and operations. Get the free Brand &amp; Talent² field guide.">
 <meta property="og:title" content="Kevin Keohane — Founder, Brand &amp; Talent | B2B Growth">
-<meta property="og:description" content="Kevin Keohane leads Brand &amp; Talent, a B2B growth consultancy connecting positioning, go-to-market and employee experience. Download the free Brand &amp; Talent² field guide.">
+<meta property="og:description" content="Kevin Keohane helps B2B leaders diagnose what’s holding back growth and fix it across positioning, go-to-market, employee experience and operations. Get the free Brand &amp; Talent² field guide.">
 <meta property="og:url" content="https://kevinkeohane.com">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://kevinkeohane.com">
@@ -91,14 +91,20 @@ section{padding:72px 0}
 .problems{display:flex;flex-direction:column;gap:16px}
 .problem{display:grid;grid-template-columns:1fr 1.15fr;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.15s}
 .problem:hover{box-shadow:0 8px 30px rgba(15,23,32,.08);transform:translateY(-1px)}
-.prob-q{background:var(--brand);color:#fff;padding:36px;display:flex;flex-direction:column;justify-content:space-between}
-.prob-num{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:18px}
-.prob-q blockquote{font-size:clamp(17px,2.2vw,22px);font-weight:700;line-height:1.3;letter-spacing:-.02em}
-.prob-q blockquote::before{content:'\201C'}
-.prob-q blockquote::after{content:'\201D'}
-.prob-proof{margin-top:20px;font-size:11px;font-weight:800;color:var(--cyan);letter-spacing:.05em;text-transform:uppercase}
-.prob-body{background:var(--paper);padding:36px;display:flex;align-items:center}
-.prob-body p{color:var(--ink-soft);font-size:16px;line-height:1.7}
+.prob-q,.prob-body{padding:36px}
+.prob-stage{font-size:clamp(21px,3vw,29px);line-height:1.2;letter-spacing:-.025em;margin-bottom:16px}
+.prob-num{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:6px}
+.prob-symptom,.prob-cause{font-size:clamp(16px,2.2vw,21px);font-weight:700;line-height:1.4;letter-spacing:-.015em}
+.prob-body{background:var(--paper)}
+.prob-work,.prob-proof,.problem-note{color:var(--ink-soft)}
+.prob-work{margin-top:10px;line-height:1.65}
+.prob-proof{margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:13px}
+.prob-work strong,.prob-proof strong{color:var(--ink)}
+.problem-note{max-width:68ch;margin:28px auto 0;text-align:center}
+.hero p.lead{margin-bottom:16px}
+.hero-method{margin-bottom:24px;font-weight:800}
+.hero-method a{color:var(--cyan);text-decoration:underline;text-underline-offset:.22em}
+#services,.problem[id]{scroll-margin-top:85px}
 
 /* ── About ── */
 .about-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:start}
@@ -107,15 +113,6 @@ section{padding:72px 0}
 .cred{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px}
 .cred b{display:block;font-size:20px;font-weight:800;color:var(--brand);letter-spacing:-.02em;margin-bottom:3px}
 .cred span{color:var(--ink-soft);font-size:13px}
-
-/* ── Services ── */
-.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.svc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
-.svc .ic{width:44px;height:44px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px}
-.ic-pink{background:var(--pink-soft)}
-.ic-cyan{background:var(--cyan-soft)}
-.svc h3{font-size:17px;font-weight:700;margin-bottom:8px}
-.svc p{color:var(--ink-soft);font-size:15px}
 
 /* ── Testimonials ── */
 .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -159,7 +156,6 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--ink-soft);fon
   .problem{grid-template-columns:1fr}
   .quotes{grid-template-columns:1fr}
   .art-grid{grid-template-columns:1fr}
-  .svc-grid{grid-template-columns:1fr}
   .cred-grid{grid-template-columns:1fr 1fr}
   .nav-links{display:none}
   section{padding:52px 0}
@@ -194,8 +190,9 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--ink-soft);fon
     <div class="hero-inner">
       <div>
         <span class="pill">Founder, Brand &amp; Talent · B2B growth consultancy</span>
-        <h1>Give buyers a reason to choose you. <em>Then deliver on it.</em></h1>
-        <p class="lead">I help B2B leadership teams find a position they can defend, build a story sales can use, and align the people who have to deliver it. Then we put the systems in place to scale what works.</p>
+        <h1>Fix what’s actually <em>holding back growth.</em></h1>
+        <p class="lead">You might come to me for a rebrand, more leads, or a strategy that hasn’t stuck. I help B2B leaders find what’s behind the brief and fix it, whether the work sits in brand, sales, culture or operations.</p>
+        <p class="hero-method"><a href="#problems">Choose. Build. Align. Scale.</a></p>
         <div class="cta-row">
           <a href="#book" class="btn">Get the free book ↓</a>
           <a href="https://calendly.com/kevin-keohane/initial-chat" onclick="return openCalendly();" class="btn ghost-light">Book a clarity call</a>
@@ -217,6 +214,72 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--ink-soft);fon
   </div>
 </div>
 
+<!-- WHAT I SOLVE -->
+<section id="problems" class="wash" aria-labelledby="problems-title">
+  <div class="wrap">
+    <div class="section-head" id="services">
+      <p class="eyebrow">What I solve</p>
+      <h2 id="problems-title">Choose. Build. Align. Scale.</h2>
+      <p>Four ways to find what’s holding back growth. Start with the problem you recognise. The fix might sit somewhere else.</p>
+    </div>
+    <div class="problems">
+      <article class="problem" id="choose" aria-labelledby="choose-title">
+        <div class="prob-q">
+          <h3 class="prob-stage" id="choose-title">Choose</h3>
+          <p class="prob-num">What I hear</p>
+          <p class="prob-symptom">“We need a rebrand. Buyers can’t tell us apart.”</p>
+        </div>
+        <div class="prob-body">
+          <p class="prob-num">What’s underneath</p>
+          <p class="prob-cause">You’re competing on terms that make everyone look the same.</p>
+          <p class="prob-work"><strong>How I help:</strong> I work with leadership to decide which buyers to win, what they should choose you for, and what proof will hold up when procurement puts you side by side with the competition.</p>
+          <p class="prob-proof"><strong>In practice:</strong> EarthScope: $400M+ contract won and defended</p>
+        </div>
+      </article>
+      <article class="problem" id="build" aria-labelledby="build-title">
+        <div class="prob-q">
+          <h3 class="prob-stage" id="build-title">Build</h3>
+          <p class="prob-num">What I hear</p>
+          <p class="prob-symptom">“Marketing’s busy. Why isn’t pipeline moving?”</p>
+        </div>
+        <div class="prob-body">
+          <p class="prob-num">What’s underneath</p>
+          <p class="prob-cause">More activity won’t help if marketing and sales are telling different stories.</p>
+          <p class="prob-work"><strong>How I help:</strong> I turn the position into an offer, proof and sales tools that hold up in a buyer conversation. Then we connect campaigns, partners and sales around the same buyers and measure what moves deals forward.</p>
+          <p class="prob-proof"><strong>In practice:</strong> Deloitte: 40+ go-to-market playbooks</p>
+        </div>
+      </article>
+      <article class="problem" id="align" aria-labelledby="align-title">
+        <div class="prob-q">
+          <h3 class="prob-stage" id="align-title">Align</h3>
+          <p class="prob-num">What I hear</p>
+          <p class="prob-symptom">“We agreed the strategy. Nothing changed.”</p>
+        </div>
+        <div class="prob-body">
+          <p class="prob-num">What’s underneath</p>
+          <p class="prob-cause">The people expected to deliver the promise haven’t been set up to keep it.</p>
+          <p class="prob-work"><strong>How I help:</strong> I trace where employee friction shows up for customers, then work with leaders and frontline teams to change the routines, tools or incentives getting in the way. That’s where employee experience becomes a growth issue.</p>
+          <p class="prob-proof"><strong>In practice:</strong> EY: one story across 150 countries and 300,000 people</p>
+        </div>
+      </article>
+      <article class="problem" id="scale" aria-labelledby="scale-title">
+        <div class="prob-q">
+          <h3 class="prob-stage" id="scale-title">Scale</h3>
+          <p class="prob-num">What I hear</p>
+          <p class="prob-symptom">“We’ve grown into several companies sharing a logo.”</p>
+        </div>
+        <div class="prob-body">
+          <p class="prob-num">What’s underneath</p>
+          <p class="prob-cause">Growth exposed decisions no one owns: what stays consistent, what can flex and who decides.</p>
+          <p class="prob-work"><strong>How I help:</strong> I define what the businesses share and where teams have room to adapt. Then we build the standards and workflows that let the work travel without a fresh meeting every time. If AI helps, we use it once the work is worth repeating.</p>
+          <p class="prob-proof"><strong>In practice:</strong> LTIMindtree: five AI offerings, one idea</p>
+        </div>
+      </article>
+    </div>
+    <p class="problem-note">These aren’t four separate projects. If buyers can’t tell you apart, a better campaign won’t fix it. And a sharper story won’t help if your people can’t deliver it. I start where growth is stuck and follow the problem across teams.</p>
+  </div>
+</section>
+
 <section id="book" class="book-feature" aria-labelledby="book-title">
   <div class="wrap book-inner">
     <img src="/assets/brand-and-talent-2-cover.jpg" width="1600" height="2560" alt="Brand &amp; Talent² book cover">
@@ -229,85 +292,6 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--ink-soft);fon
         <a class="btn" href="https://brandandtalent.com/downloads/Brand-and-Talent-2.pdf">Download free PDF</a>
         <a class="btn ghost-light" href="https://brandandtalent.com/downloads/Brand-and-Talent-2.epub">Download EPUB</a>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- 5 PROBLEMS -->
-<section id="problems" class="wash">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">What I solve</div>
-      <h2>Five problems I've spent 20 years fixing</h2>
-      <p>Each one sounds like a marketing problem. None of them are.</p>
-    </div>
-    <div class="problems">
-
-      <div class="problem">
-        <div class="prob-q">
-          <div>
-            <div class="prob-num">01 / 05</div>
-            <blockquote>We spend on marketing and I can't see the return.</blockquote>
-          </div>
-          <div class="prob-proof">Proof · 40+ GTM playbooks for Deloitte, $10M–$10B+ targets</div>
-        </div>
-        <div class="prob-body">
-          <p>It's rarely the marketing. The positioning was never actually settled, so sales improvises a different story in every room and the agency optimises hard against the wrong message. The expensive part isn't the wasted budget. It's eighteen months spent solving the wrong problem competently.</p>
-        </div>
-      </div>
-
-      <div class="problem">
-        <div class="prob-q">
-          <div>
-            <div class="prob-num">02 / 05</div>
-            <blockquote>We're better than them. On paper we look the same.</blockquote>
-          </div>
-          <div class="prob-proof">Proof · EarthScope — $400M+ contract won and defended</div>
-        </div>
-        <div class="prob-body">
-          <p>Categories reach parity on the page long before they reach it in practice. A comparison grid rewards whatever fits inside a cell, so the better offer scores the same as the weaker one. You don't win by arguing harder inside the cell. You win by changing what the buyer believes the cells should be — before the criteria get written.</p>
-        </div>
-      </div>
-
-      <div class="problem">
-        <div class="prob-q">
-          <div>
-            <div class="prob-num">03 / 05</div>
-            <blockquote>We agreed the strategy. Then nothing happened.</blockquote>
-          </div>
-          <div class="prob-proof">Proof · EY — one story, 150 countries, 300,000 people</div>
-        </div>
-        <div class="prob-body">
-          <p>It was written centrally, admired in the room, and quietly ignored by the people expected to carry it. Adoption is the deliverable, not the deck. A strategy that needs authority to travel doesn't travel — it has to be built for the people who will use it, not the people who will approve it.</p>
-        </div>
-      </div>
-
-      <div class="problem">
-        <div class="prob-q">
-          <div>
-            <div class="prob-num">04 / 05</div>
-            <blockquote>We're promising what our own people can't deliver.</blockquote>
-          </div>
-          <div class="prob-proof">Proof · EX2CX methodology · two books on where brand and talent converge</div>
-        </div>
-        <div class="prob-body">
-          <p>The promise outruns operational reality and the company pays for the gap twice — in attrition and in churn. By the time it surfaces in Glassdoor and CX scores it has been costing money for two years. EX2CX maps employee-experience friction to customer-experience failure: culture priced as a commercial problem, not an HR one.</p>
-        </div>
-      </div>
-
-      <div class="problem">
-        <div class="prob-q">
-          <div>
-            <div class="prob-num">05 / 05</div>
-            <blockquote>We've become several companies sharing a logo.</blockquote>
-          </div>
-          <div class="prob-proof">Proof · Dormakaba · LTIMindtree — five AI offerings, one idea</div>
-        </div>
-        <div class="prob-body">
-          <p>Multiple products, segments or acquisitions, each arriving with its own story — then flattened into sameness or fragmented into incoherence. Neither is a messaging problem. It's architecture: what holds at the top, what flexes underneath, and who decides.</p>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -339,41 +323,8 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--ink-soft);fon
   </div>
 </section>
 
-<!-- WHAT I DO -->
-<section class="wash" id="services">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">What I do</div>
-      <h2>Choose. Build. Align. Scale.</h2>
-      <p>Four parts of the same growth problem. I lead the work from the first hard decision to what your team actually uses.</p>
-    </div>
-    <div class="svc-grid">
-      <div class="svc">
-        <div class="ic ic-pink">🎯</div>
-        <h3>Choose · Position and narrative</h3>
-        <p>The messaging spine inside organisational complexity — a distinctive, defensible position and the brand narrative that makes every downstream decision easier.</p>
-      </div>
-      <div class="svc">
-        <div class="ic ic-cyan">🚀</div>
-        <h3>Build · Go-to-market</h3>
-        <p>The demand-gen, alliance, and partner infrastructure — GTM and sales-enablement "operating systems" that convert brand narrative into qualified pipeline.</p>
-      </div>
-      <div class="svc">
-        <div class="ic ic-pink">👥</div>
-        <h3>Align · Culture and experience</h3>
-        <p>My EX2CX methodology connects employee-experience friction to customer-experience outcomes — culture as a measurable commercial lever, not an HR exercise.</p>
-      </div>
-      <div class="svc">
-        <div class="ic ic-cyan">🤖</div>
-        <h3>Scale · Systems and AI</h3>
-        <p>Put repeatable workflows, brand standards and human review in place before automating. AI should speed up good work, not multiply confusion.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- TESTIMONIALS -->
-<section id="testimonials">
+<section id="testimonials" class="wash">
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">What leaders say</div>
@@ -409,7 +360,7 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--ink-soft);fon
 </section>
 
 <!-- ARTICLES PREVIEW -->
-<section class="wash" id="articles">
+<section id="articles">
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">Articles</div>
@@ -446,7 +397,7 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--ink-soft);fon
       </a>
     </div>
     <div style="text-align:center;margin-top:32px">
-      <a href="/articles" class="btn outline">View all 28 articles →</a>
+      <a href="/articles" class="btn outline">View all articles →</a>
     </div>
   </div>
 </section>
@@ -456,7 +407,7 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:var(--ink-soft);fon
   <div class="wrap">
     <div class="band">
       <h2>Ready to fix the real problem?</h2>
-      <p>Senior advisory, fractional CMO, or board roles. US &amp; EU. 30 minutes, no obligation.</p>
+      <p>Bring the problem as it’s been briefed. In 30 minutes, we’ll talk about what’s happening and what’s worth looking at first.</p>
       <div class="cta-row" style="justify-content:center">
         <a href="https://calendly.com/kevin-keohane/initial-chat" onclick="return openCalendly();" class="btn">Book a call →</a>
         <a href="mailto:kevin.keohane@brandandtalent.com" class="btn ghost-light">Email me</a>
