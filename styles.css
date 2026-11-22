@@ -129,3 +129,18 @@ strong { font-weight: 700; }
   .nav-links { display: none; }
   .blog-grid { grid-template-columns: 1fr; }
 }
+
+/* === exp-series volumes grid === */
+.exp-series-section { padding:60px 0; background:var(--wash,#0d1623); }
+.exp-series-section .eyebrow { margin-bottom:8px; }
+.exp-series-section h2 { font-size:1.6rem; font-weight:700; color:var(--white,#f7f7f5); margin:0 0 28px; }
+.exp-vol-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.exp-vol-card { display:flex; flex-direction:column; gap:10px; padding:18px 14px; background:rgba(255,255,255,0.04); border-radius:10px; border:1px solid rgba(255,255,255,0.1); }
+.exp-vol-cover { width:100%; max-width:130px; height:auto; border-radius:4px; }
+.exp-vol-label { font-size:0.72rem; font-weight:800; letter-spacing:0.1em; }
+.exp-vol-name { display:block; font-size:1.1rem; font-weight:800; color:#f7f7f5; margin-top:2px; }
+.exp-vol-desc { font-size:0.8rem; color:rgba(247,247,245,0.6); line-height:1.4; margin:0; flex:1; }
+.exp-vol-actions { display:flex; flex-direction:column; gap:7px; margin-top:auto; }
+.exp-vol-actions .btn { text-align:center; padding:7px 12px; font-size:0.8rem; }
+@media (max-width:900px) { .exp-vol-grid { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:480px) { .exp-vol-grid { grid-template-columns:1fr 1fr; } }
