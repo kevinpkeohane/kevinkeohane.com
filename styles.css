@@ -135,8 +135,8 @@ strong { font-weight: 700; }
 .exp-series-section .eyebrow { margin-bottom:8px; }
 .exp-series-section h2 { font-size:1.6rem; font-weight:700; color:var(--white,#f7f7f5); margin:0 0 28px; }
 .exp-vol-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
-.exp-vol-card { display:flex; flex-direction:column; gap:10px; padding:18px 14px; background:rgba(255,255,255,0.04); border-radius:10px; border:1px solid rgba(255,255,255,0.1); }
-.exp-vol-cover { width:100%; max-width:130px; height:auto; border-radius:4px; }
+.exp-vol-card { display:flex; flex-direction:column; gap:10px; padding:16px; background:rgba(255,255,255,0.04); border-radius:12px; border:1px solid rgba(255,255,255,0.12); }
+.exp-vol-cover { width:100%; height:auto; border-radius:6px; display:block; }
 .exp-vol-label { font-size:0.72rem; font-weight:800; letter-spacing:0.1em; }
 .exp-vol-name { display:block; font-size:1.1rem; font-weight:800; color:#f7f7f5; margin-top:2px; }
 .exp-vol-desc { font-size:0.8rem; color:rgba(247,247,245,0.6); line-height:1.4; margin:0; flex:1; }
