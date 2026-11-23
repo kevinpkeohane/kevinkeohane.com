@@ -144,3 +144,10 @@ strong { font-weight: 700; }
 .exp-vol-actions .btn { text-align:center; padding:7px 12px; font-size:0.8rem; }
 @media (max-width:900px) { .exp-vol-grid { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:480px) { .exp-vol-grid { grid-template-columns:1fr 1fr; } }
+
+/* guide-btn download buttons (match brandandtalent.com) */
+.guide-btn-primary { display:block; background:#ff1e83; color:#fff; padding:9px 14px; border-radius:6px; font-size:0.82rem; font-weight:700; text-align:center; text-decoration:none; transition:opacity 0.18s; }
+.guide-btn-primary:hover { opacity:0.82; }
+.guide-btn-secondary { display:block; color:#c8c8c8; border:1px solid rgba(255,255,255,0.25); padding:9px 14px; border-radius:6px; font-size:0.82rem; font-weight:500; text-align:center; text-decoration:none; transition:border-color 0.18s, color 0.18s; }
+.guide-btn-secondary:hover { border-color:#ff1e83; color:#ff1e83; }
+.guide-banner-kicker { font-size:0.78rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#ff1e83; margin-bottom:6px; }
